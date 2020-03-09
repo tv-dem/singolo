@@ -391,3 +391,7 @@
             right: 40px;
             position: absolute;
         }
+	a{
+	    text-decoration:none;
+	    color:#f0d8d9;
+	}
