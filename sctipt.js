@@ -27,10 +27,6 @@ imgs.forEach((item)=>{
 let a = document.querySelectorAll('header a');
 a.forEach((item)=>{
     item.addEventListener('click', ()=>{
-        a.forEach((i)=>{
-            i.classList.remove('active');
-        });
-        item.classList.add('active');
     })
 })
 let modal = document.querySelector('.modal')
@@ -44,6 +40,9 @@ document.querySelector('form').addEventListener('submit', function(e){
     let proj = document.querySelector('textarea.proj').value;
     proj = (!proj) ? 'Without description  ' : `Description  : ${proj}`
     document.querySelector('p.proj').innerHTML = proj;
+    document.querySelectorAll('.quote input, .quote textarea').forEach(input => {
+        input.value=''
+    });
 })
 
 document.querySelectorAll('.modal input').forEach((item)=>{
@@ -78,8 +77,23 @@ document.querySelectorAll('.portfolio li').forEach((item)=>{
             document.querySelectorAll('.gallery img').forEach((img, i)=>{
                 img.src = images[i];
                 img.classList.remove('active')
-            })
-            
+            })            
         }
     })
+})
+
+document.addEventListener("scroll", function () {
+    const Elements = document.querySelectorAll(".section"),
+        links = document.querySelectorAll("header a");
+    document.querySelectorAll("header a").forEach((el) => el.classList.remove("active"));
+    for(let el of Elements) {
+        if(el.offsetTop >= window.pageYOffset && (el.offsetTop + el.offsetHeight) > window.pageYOffset) {
+            links.forEach((link) => {
+                if(el.getAttribute("id") === link.getAttribute("href").substring(1)){
+                console.log("sdf")
+                    link.classList.add("active");}
+            });
+            break;
+        }
+    }
 })

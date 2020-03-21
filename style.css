@@ -4,6 +4,9 @@
             padding: 0;
             margin: 0;
         }
+        body, html{
+            scroll-behavior: smooth;
+        }
         main{
             width: 1020px;
             margin: auto;
@@ -372,7 +375,7 @@
             margin-top: 20px;
         }
         
-        .quote input{
+        .quote input, .quote button{
             box-sizing: border-box;
             background-color: #d6564f;
             border: none;
@@ -386,13 +389,13 @@
             padding-left: 15px;
         }
         
-        .quote input[type="submit"]{
+        .quote button[type="submit"]{
             padding: 0;
             margin: auto;
             width: 100px;
-        }
-        .quote input[type="submit"]:hover{
             cursor: pointer;
+        }
+        .quote button[type="submit"]:hover{
             opacity: .9;
         }
         
