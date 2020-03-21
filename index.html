@@ -15,11 +15,11 @@
             <span>The letter was sent</span>
             <p class="subj"></p>
             <p class="proj"></p>
-                <input type="button" value="OK" >
+            <input type="button" value="OK">
         </div>
     </div>
     <main>
-        <header id="home">
+        <header>
             <h1>singolo<span>*</span></h1>
             <ul>
                 <li><a class="active" href="#home">home</a></li>
@@ -29,7 +29,7 @@
                 <li><a href="#contact">contact</a></li>
             </ul>
         </header>
-        <div class="slider">
+        <div class="slider section" id="home">
             <div class="block-arrow">
                 <div class="arrow mirror"></div>
             </div>
@@ -37,22 +37,22 @@
                 <div class="slide active">
                     <img src="assets/iPhone Vertical.svg" alt="" class="ver phone">
                     <img src="assets/iPhone Horizontal.svg" alt="" class="hor phone">
-                    <img src="assets/off.png" class="hor-phone-off phone-on"alt="">
-                    <img src="assets/off.png" class="ver-phone-off phone-on"alt="">
+                    <img src="assets/off.png" class="hor-phone-off phone-on" alt="">
+                    <img src="assets/off.png" class="ver-phone-off phone-on" alt="">
                     <img class="buttom buttom-2" src="assets/Project9.png" alt="">
                     <img class="buttom buttom-1" src="assets/Project9.png" alt="">
                 </div>
                 <div class="slide">
-                    <img src="assets/slider-content.png" class="phone phone-1"alt="">
-                    <img src="assets/slider-content-1.png" class="phone phone-3"alt="">
-                    <img src="assets/slider-content-2.png" class="phone phone-2"alt="">
+                    <img src="assets/slider-content.png" class="phone phone-1" alt="">
+                    <img src="assets/slider-content-1.png" class="phone phone-3" alt="">
+                    <img src="assets/slider-content-2.png" class="phone phone-2" alt="">
                 </div>
             </div>
             <div class="block-arrow">
                 <div class="arrow"></div>
             </div>
         </div>
-        <div class="servises" id="services">
+        <div class="servises section" id="services">
             <h2>Our Services</h2>
             <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi
                 erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor
@@ -109,7 +109,7 @@
                     </div>
                 </div>
         </div>
-        <div class="portfolio" id="portfolio">
+        <div class="portfolio section" id="portfolio">
             <h2>Portfolio</h2>
             <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
             <ul>
@@ -134,7 +134,7 @@
 
             </div>
         </div>
-        <div class="about" id="about">
+        <div class="about section" id="about">
             <h2>About Us</h2>
             <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi
                 erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor
@@ -145,7 +145,7 @@
                     <figcaption>
                         <h3>Adam Jensen</h3>
                         <p>Quisque luctus, Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut fuga ipsum
-                            </p>
+                        </p>
                         <div class="contacts">
                             <img src="assets/facebook.svg" alt="">
                             <img src="assets/google.svg" alt="">
@@ -184,50 +184,56 @@
                 </figure>
             </section>
         </div>
-        <div class="quote" id="contact">
-            <h2>Get a Quote</h2>
-            <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi
-                erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor
-                mauris condimentum</p>
-            <div class="container">
-                <form>
-                    <input type="text" required placeholder="Name (Required)">
-                    <br>
-                    <input type="email" required placeholder="Email (Required)">
-                    <br>
-                    <input class="subj" type="text" placeholder="Subject">
-                    <br>
-                    <textarea class="proj" placeholder="Describe your project in detail..."></textarea>
-                    <br>
-                    <input type="submit" class="submit"  value="submit">
-                </form>
-                <div class="cont">
-                    <h3>Contact Information</h3>
-                    <p>Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae aliquam tellus.
-                        Proin sit amet volutpat libero. Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet
-                        turpis, et consequat felis. </p>
-                    <div class="links">
-                        <p><span><img src="assets/location.svg"></span>Elm St. 14/05 Lost City</p>
-                        <p><span><img src="assets/phone.svg"></span><a href="tel:+3528 331 86 35">03528 331 86 35</a>
-                        </p>
-                        <p><span><img src="assets/mail.svg"></span><a
-                                href="mailto:info@singolo.com">info@singolo.com</a></p>
+        <div id="contact" class="section">
+            <div class="quote">
+                <h2>Get a Quote</h2>
+                <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus,
+                    nisi
+                    erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo,
+                    tortor
+                    mauris condimentum</p>
+                <div class="container">
+                    <form>
+                        <input type="text" required placeholder="Name (Required)">
+                        <br>
+                        <input type="email" required placeholder="Email (Required)">
+                        <br>
+                        <input class="subj" type="text" placeholder="Subject">
+                        <br>
+                        <textarea class="proj" placeholder="Describe your project in detail..."></textarea>
+                        <br>
+                        <button type="submit" class="submit">submit</button>
+                    </form>
+                    <div class="cont">
+                        <h3>Contact Information</h3>
+                        <p>Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae aliquam tellus.
+                            Proin sit amet volutpat libero. Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet
+                            turpis, et consequat felis. </p>
+                        <div class="links">
+                            <p><span><img src="assets/location.svg"></span>Elm St. 14/05 Lost City</p>
+                            <p><span><img src="assets/phone.svg"></span><a href="tel:+3528 331 86 35">03528 331 86
+                                    35</a>
+                            </p>
+                            <p><span><img src="assets/mail.svg"></span><a
+                                    href="mailto:info@singolo.com">info@singolo.com</a></p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <footer>
-            <p class="Copyright">&#169 Copyright 2013</p>
-            <div class="right">
+            <footer>
+                <p class="Copyright">&#169 Copyright 2013</p>
+                <div class="right">
 
-                
-                <img src="assets/facebook.svg" alt="">
-                <img src="assets/google.svg" alt="">
-                <img src="assets/Twitter.svg" alt="">
-                <img src="assets/in.svg" alt="">
-            </div>
-        </footer>
+
+                    <img src="assets/facebook.svg" alt="">
+                    <img src="assets/google.svg" alt="">
+                    <img src="assets/Twitter.svg" alt="">
+                    <img src="assets/in.svg" alt="">
+                </div>
+            </footer>
+        </div>
     </main>
 </body>
-    <script src="sctipt.js"></script>
+<script src="sctipt.js"></script>
+
 </html>
