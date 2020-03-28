@@ -97,3 +97,9 @@ document.addEventListener("scroll", function () {
         }
     }
 })
+let turn = 100;
+document.querySelector('header img').addEventListener('click', function(){
+    document.querySelector('.menu').classList.toggle('active');
+    document.querySelector('header img').style = `transform: rotate(${turn}grad)`
+    turn += 100;
+})
