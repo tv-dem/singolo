@@ -97,9 +97,19 @@ document.addEventListener("scroll", function () {
         }
     }
 })
+
 let turn = 100;
-document.querySelector('header img').addEventListener('click', function(){
+function menuIsActive(){
     document.querySelector('.menu').classList.toggle('active');
     document.querySelector('header img').style = `transform: rotate(${turn}grad)`
+    document.querySelector('h1').classList.toggle('h1InMenu');
     turn += 100;
+}
+document.querySelector('header img').addEventListener('click', function(){
+    menuIsActive()
+})
+document.querySelectorAll('.nav2 li').forEach((el)=>{
+    el.addEventListener('click', function(){
+        menuIsActive()
+    })
 })

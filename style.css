@@ -54,6 +54,7 @@ ul.nav2 li::before{
 }
 .menu.active{
     display: block;
+    box-shadow: 0 0 0 100vw rgba(0, 0, 0,0.5);
 }
 
 header{
@@ -67,6 +68,7 @@ header{
 }
 
 header img{
+    transition: all .2s;
     position: absolute;
     top: 25px;
     Left: 22px;
@@ -201,7 +203,6 @@ img.buttom:hover{
     padding: 43px 0 38px 150px;
 }
 .servises .container{
-    margin: 0 auto;
     padding: 30px 0 74px 0;
     display: grid;
     grid-template-rows: 95px 95px;
@@ -317,6 +318,9 @@ h2{
     box-shadow: 0 0 0 5px #F06C64;
 }
 
+.about figure{
+    margin: 0 auto;
+}
 
 .about figure > img{
     height: 300px;
@@ -689,8 +693,8 @@ a{
     .servises .container{
         padding: 12px 0 35px 0;
         display: grid;
-        grid-template-rows: repeat(6, 95px);
-        grid-template-columns: 300px;
+        grid-template-rows: repeat(6, auto);
+        grid-template-columns: auto;
         grid-row-gap: 24px;
     }
     .portfolio h2{
@@ -717,11 +721,11 @@ a{
         flex-direction: column;
     }
     .about figure > img{
-        height: 314px;
-        width: 314px;
+        height: 100%;
+        width: 100%;
     }
     .about figure{
-        width: 314px;
+        width: auto;
         padding-bottom: 30px;
     }
     .about figure:last-child{
@@ -769,10 +773,36 @@ a{
         display: none;
     }
     h1{
+        z-index: 40;
         position: absolute;
         left: 40%;
         top: 40%;
         font-size: 19.6875px;
         line-height: 24px;
+    }
+    .h1InMenu{
+        left: 20%;
+    }
+}
+
+@media(max-width: 365px){
+    .slide2{
+        height:80px;
+    }
+    .ver{
+        height:120px;
+        padding-bottom: 5%;
+    }
+    .hor{
+        width: 120px;
+    }
+    .gallery{
+        display: flex;
+        flex-direction: column;
+    }
+    .gallery img{
+        width: auto;
+        height: auto;
+        margin-bottom: 20px;
     }
 }
